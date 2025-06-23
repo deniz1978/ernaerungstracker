@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: contents;
+}
+
+form input {
+    width: 100%;
+}
+
+#entries {
+    list-style: none;
+    padding: 0;
+}
+
+#entries li {
+    margin-bottom: 0.5rem;
+}
+
+#entries button {
+    margin-left: 0.5rem;
+}
+
+#totals {
+    margin-top: 1rem;
+    font-weight: bold;
+}
