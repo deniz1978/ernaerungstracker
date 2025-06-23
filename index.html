@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ernährungstracker</title>
 </head>
 <body>
-    
+    <h1>Ernährungstracker</h1>
+
+    <form id="entry-form">
+        <label>Datum:
+            <input type="date" id="entry-date">
+        </label>
+        <label>Lebensmittel:
+            <input type="text" id="food-name" required>
+        </label>
+        <label>Kalorien:
+            <input type="number" id="calories" required>
+        </label>
+        <label>Eiweiß (g):
+            <input type="number" id="protein" required>
+        </label>
+        <label>Kohlenhydrate (g):
+            <input type="number" id="carbs" required>
+        </label>
+        <label>Fett (g):
+            <input type="number" id="fat" required>
+        </label>
+        <button type="submit">Hinzufügen</button>
+    </form>
+
+    <h2>Einträge</h2>
+    <ul id="entries"></ul>
+
+    <div id="totals"></div>
 
     <script src="script.js" defer></script>
 </body>
